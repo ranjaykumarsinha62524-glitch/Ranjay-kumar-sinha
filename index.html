@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security Safeguards -->
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Advocate Ranjay Kumar Sinha | Senior Counsel & Banking / Revenue Advisor - Ranchi</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1b263b',
+                            900: '#0b132b',
+                            950: '#070a14',
+                        },
+                        gold: {
+                            400: '#d4af37',
+                            500: '#c5a059',
+                            600: '#a38038',
+                        },
+                        slateBg: '#f8fafc',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #c5a059 50%, #9a762b 100%);
+        }
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #ebd07b 0%, #c5a059 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Anti-spam honeypot field */
+        .hp-field {
+            display: none !important;
+            visibility: hidden !important;
+            position: absolute !important;
+            left: -9999px !important;
+        }
+    </style>
+</head>
+<body class="font-sans bg-slateBg text-gray-800 antialiased selection:bg-gold-500 selection:text-white flex flex-col min-h-screen pb-16 lg:pb-0">
+
+    <div class="bg-navy-950 text-gray-300 text-xs py-2 px-4 border-b border-gray-800 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <a href="tel:+919334165736" class="hover:text-gold-400 transition flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-gold-500"></i> +91 9334165736
+                </a>
+                <a href="mailto:RanjayKumarSinha62524@gmail.com" class="hover:text-gold-400 transition flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-gold-500"></i> RanjayKumarSinha62524@gmail.com
+                </a>
+                <span class="flex items-center gap-2 text-gray-400">
+                    <i class="fa-solid fa-clock text-gold-500"></i> Hours: 8:00 AM - 8:00 PM (Mon-Sat)
+                </span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-xs bg-navy-800 px-2.5 py-1 rounded text-gold-400 font-medium border border-gold-500/20">
+                    <i class="fa-solid fa-shield-halved mr-1"></i> 35+ Years Active Practice
+                </span>
+                <button onclick="toggleLanguage()" id="langToggleBtn" class="bg-gold-500 hover:bg-gold-600 text-navy-950 font-semibold px-2.5 py-0.5 rounded transition text-xs flex items-center gap-1">
+                    <i class="fa-solid fa-language"></i> <span id="langBtnText">हिंदी में देखें</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50 bg-navy-900 text-white shadow-xl border-b border-gold-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-full gold-gradient flex items-center justify-center text-navy-950 font-bold text-xl shadow-lg border-2 border-amber-200">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <div>
+                        <span class="block text-xl md:text-2xl font-serif font-bold tracking-wide text-white group-hover:text-gold-400 transition">
+                            Ranjay Kumar Sinha
+                        </span>
+                        <span class="block text-xs tracking-widest text-gold-400 uppercase font-medium">
+                            Advocate • High Court, Revenue & Civil Courts
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Nav Links -->
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#about" class="hover:text-gold-400 transition py-1">
+                        <span class="lang-en">About Practice</span>
+                        <span class="lang-hi hidden">परिचय</span>
+                    </a>
+                    <a href="#practice-areas" class="hover:text-gold-400 transition py-1">
+                        <span class="lang-en">Practice Areas</span>
+                        <span class="lang-hi hidden">कार्य क्षेत्र</span>
+                    </a>
+                    <a href="#panels" class="hover:text-gold-400 transition py-1">
+                        <span class="lang-en">Banks & Govt Panels</span>
+                        <span class="lang-hi hidden">बैंक व सरकारी पैनल</span>
+                    </a>
+                    <a href="#office" class="hover:text-gold-400 transition py-1">
+                        <span class="lang-en">Chamber Location</span>
+                        <span class="lang-hi hidden">कार्यालय स्थान</span>
+                    </a>
+                    <a href="#appointment" class="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold px-5 py-2.5 rounded-lg shadow-md hover:shadow-gold-500/20 transition transform hover:-translate-y-0.5">
+                        <span class="lang-en">Book Consultation</span>
+                        <span class="lang-hi hidden">परामर्श बुक करें</span>
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center space-x-2 lg:hidden">
+                    <button onclick="toggleLanguage()" class="bg-gold-500/20 text-gold-400 border border-gold-500/40 text-xs px-2.5 py-1.5 rounded font-medium mr-1">
+                        <span id="langMobileText">HI</span>
+                    </button>
+                    <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="text-gray-300 hover:text-white p-2 focus:outline-none" aria-label="Toggle Navigation">
+                        <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-navy-950 border-t border-navy-800 px-4 pt-3 pb-6 space-y-3">
+            <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-navy-800">
+                <span class="lang-en">About Practice</span>
+                <span class="lang-hi hidden">परिचय</span>
+            </a>
+            <a href="#practice-areas" onclick="toggleMobileMenu()" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-navy-800">
+                <span class="lang-en">Practice Areas</span>
+                <span class="lang-hi hidden">कार्य क्षेत्र</span>
+            </a>
+            <a href="#panels" onclick="toggleMobileMenu()" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-navy-800">
+                <span class="lang-en">Banks & Govt Panels</span>
+                <span class="lang-hi hidden">बैंक व सरकारी पैनल</span>
+            </a>
+            <a href="#office" onclick="toggleMobileMenu()" class="block py-2 text-gray-200 hover:text-gold-400 border-b border-navy-800">
+                <span class="lang-en">Chamber Location</span>
+                <span class="lang-hi hidden">कार्यालय स्थान</span>
+            </a>
+            <a href="#appointment" onclick="toggleMobileMenu()" class="block w-full text-center bg-gold-500 text-navy-950 font-bold py-3 rounded-lg shadow mt-4">
+                <span class="lang-en">Book Consultation</span>
+                <span class="lang-hi hidden">परामर्श बुक करें</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="relative bg-navy-900 text-white py-16 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#c5a059_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid md:grid-cols-12 gap-10 items-center">
+                
+                <!-- Hero Left Content -->
+                <div class="md:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-navy-800/90 border border-gold-500/40 text-gold-400 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold">
+                        <i class="fa-solid fa-award"></i>
+                        <span class="lang-en">Over 35+ Years Active Practice in Ranchi & Jharkhand</span>
+                        <span class="lang-hi hidden">35+ वर्षों का वकालत अनुभव - रांची व झारखंड</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl font-serif font-bold leading-tight text-white">
+                        <span class="lang-en">Advocate <span class="gold-text-gradient">Ranjay Kumar Sinha</span></span>
+                        <span class="lang-hi hidden">अधिवक्ता <span class="gold-text-gradient">संजय कुमार सिन्हा</span></span>
+                    </h1>
+
+                    <p class="text-gold-400 font-medium text-base sm:text-lg">
+                        Senior Legal Consultant • High Court, Civil, Revenue, Survey Settlement & RRDA / RMC Legal Advisor
+                    </p>
+
+                    <p class="text-gray-300 text-sm sm:text-base font-light leading-relaxed">
+                        <span class="lang-en">Providing comprehensive legal representation in Civil & Property Disputes, Criminal Defense, Matrimonial Matters, Survey Settlement, Revenue Courts, RRDA, Jharkhand Vidyut Nigam (JBVNL), and Ranchi Municipal Corporation (RMC). Empaneled with 9+ major nationalized banks for over 10 years.</span>
+                        <span class="lang-hi hidden">सिविल, संपत्ति विवाद, आपराधिक बचाव, पारिवारिक मामले, सर्वे सेटलमेंट, रेवेन्यू कोर्ट, आरआरडीए, विद्युत निगम एवं रांची म्युनिसिपल कॉरपोरेशन (RMC) में विशेष अनुभव। 10+ वर्षों से 9+ प्रमुख बैंकों के पैनलबद्ध अधिवक्ता।</span>
+                    </p>
+
+                    <!-- Key Metrics -->
+                    <div class="grid grid-cols-3 gap-3 pt-3 border-t border-navy-800">
+                        <div>
+                            <span class="block text-2xl font-serif font-bold text-gold-400">35+ Yrs</span>
+                            <span class="text-[11px] text-gray-400">Legal Practice</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-serif font-bold text-gold-400">10+ Yrs</span>
+                            <span class="text-[11px] text-gray-400">Bank Panel Advisor</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-serif font-bold text-gold-400">8 AM - 8 PM</span>
+                            <span class="text-[11px] text-gray-400">Consultation Hours</span>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action Buttons -->
+                    <div class="flex flex-wrap gap-3 pt-2">
+                        <a href="#appointment" class="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold px-6 py-3 rounded-lg shadow-lg hover:shadow-gold-500/30 transition flex items-center gap-2 text-sm">
+                            <i class="fa-regular fa-calendar-check text-base"></i>
+                            <span class="lang-en">Book Consultation</span>
+                            <span class="lang-hi hidden">अपॉइंटमेंट बुक करें</span>
+                        </a>
+                        <a href="tel:+919334165736" class="bg-navy-800 hover:bg-navy-700 text-white border border-gray-700 hover:border-gold-500/50 font-semibold px-5 py-3 rounded-lg transition flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-phone text-gold-400"></i>
+                            <span>+91 93341 65736</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Card with Photo Uploader -->
+                <div class="md:col-span-5">
+                    <div class="bg-gradient-to-b from-navy-800 to-navy-950 border-2 border-gold-500/40 p-6 rounded-2xl shadow-2xl text-center relative">
+                        
+                        <!-- Photo Frame / Placeholder -->
+                        <div class="relative w-40 h-40 mx-auto mb-4 rounded-full p-1 bg-gradient-to-tr from-gold-500 to-amber-200 shadow-xl overflow-hidden group">
+                            <img id="advocatePhoto" src="https://placehold.co/300x300/0b132b/d4af37?text=Advocate+Ranjay+Kumar+Sinha" alt="Advocate Ranjay Kumar Sinha" class="w-full h-full object-cover rounded-full">
+                            <label for="photoUploadInput" class="absolute inset-0 bg-navy-950/70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center cursor-pointer text-gold-400 text-xs font-semibold p-2 rounded-full">
+                                <i class="fa-solid fa-camera text-xl mb-1"></i>
+                                <span>Upload Advocate Photo</span>
+                            </label>
+                        </div>
+                        <input type="file" id="photoUploadInput" accept="image/*" class="hidden" onchange="previewUploadedPhoto(event)">
+
+                        <h3 class="font-serif text-2xl font-bold text-white mb-0.5">Ranjay Kumar Sinha</h3>
+                        <p class="text-gold-400 text-xs font-semibold uppercase tracking-wider mb-3">Senior Advocate & Legal Advisor</p>
+                        
+                        <div class="bg-navy-900/80 p-3 rounded-xl border border-navy-700 text-xs text-gray-300 space-y-2 text-left mb-4">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-building-columns text-gold-400"></i>
+                                <span>RRDA, RMC & Electricity Board Counsel</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-landmark text-gold-400"></i>
+                                <span>Survey Settlement & Revenue Courts</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-clock text-gold-400"></i>
+                                <span>Consultation: 8:00 AM - 8:00 PM Daily</span>
+                            </div>
+                        </div>
+
+                        <label for="photoUploadInput" class="inline-flex items-center gap-2 text-xs bg-gold-500/20 hover:bg-gold-500/30 text-gold-400 border border-gold-500/40 px-3 py-1.5 rounded-lg cursor-pointer transition">
+                            <i class="fa-solid fa-image"></i> Change Advocate Photo
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <div class="lg:col-span-5">
+                    <div class="bg-navy-900 text-white p-8 rounded-2xl shadow-xl border-b-4 border-gold-500 text-center">
+                        <div class="w-16 h-16 gold-gradient text-navy-950 rounded-full flex items-center justify-center text-3xl mx-auto mb-4 font-bold">
+                            <i class="fa-solid fa-gavel"></i>
+                        </div>
+                        <span class="text-5xl font-serif font-extrabold text-gold-400 block mb-1">35+</span>
+                        <span class="text-sm font-semibold text-gray-300 uppercase tracking-widest block mb-4">Years of Dedicated Practice</span>
+                        <p class="text-xs text-gray-300 leading-relaxed italic border-t border-navy-800 pt-4">
+                            "Committed to delivering steadfast courtroom advocacy, meticulous legal auditing, and reliable solution-driven legal counsel for over 35 years."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-4">
+                    <span class="text-gold-600 font-semibold text-xs uppercase tracking-widest block">Senior Legal Leadership</span>
+                    <h2 class="text-3xl font-serif font-bold text-navy-900">
+                        <span class="lang-en">Advocate Ranjay Kumar Sinha</span>
+                        <span class="lang-hi hidden">अधिवक्ता संजय कुमार सिन्हा</span>
+                    </h2>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        <span class="lang-en">With <strong>over 35 years of active legal practice</strong>, Advocate Ranjay Kumar Sinha is a distinguished name across Ranchi District Courts, the High Court of Jharkhand, Revenue Courts, and state administrative tribunals. He possesses extensive experience in handling Civil Property Disputes, Land Survey Settlements, Criminal Defenses, Matrimonial Cases, and Corporate Recovery.</span>
+                        <span class="lang-hi hidden"><strong>35 से अधिक वर्षों के निरंतर कानूनी अभ्यास</strong> के साथ, अधिवक्ता संजय कुमार सिन्हा रांची जिला अदालतों, झारखंड उच्च न्यायालय, रेवेन्यू कोर्ट और प्रशासनिक संस्थाओं में एक अत्यधिक सम्मानित नाम हैं।</span>
+                    </p>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        <span class="lang-en">In addition to private practice, he serves as an <strong>empaneled standing counsel and legal advisor for over 10 years across 9+ leading nationalized banks</strong> (State Bank of India, Bank of India, UCO Bank, Union Bank, Bank of Maharashtra, Jharkhand Rajya Gramin Bank, etc.) as well as public regulatory bodies including <strong>RRDA, Ranchi Municipal Corporation (RMC), and Jharkhand Vidyut Nigam (JBVNL)</strong>.</span>
+                        <span class="lang-hi hidden">व्यक्तिगत वकालत के साथ-साथ वे <strong>10 से अधिक वर्षों से 9+ राष्ट्रीयकृत बैंकों</strong> और <strong>RRDA, Ranchi Municipal Corporation (RMC), एवं झारखंड विद्युत निगम (JBVNL)</strong> के पैनलबद्ध कानूनी सलाहकार हैं।</span>
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                        <div class="bg-slateBg p-3 rounded-lg border-l-4 border-gold-500">
+                            <h4 class="font-serif font-bold text-navy-900 text-xs">Govt & Municipal Authorities</h4>
+                            <p class="text-[11px] text-gray-600 mt-0.5">Handling legal matters for RRDA, RMC, and Jharkhand Vidyut Nigam.</p>
+                        </div>
+                        <div class="bg-slateBg p-3 rounded-lg border-l-4 border-navy-800">
+                            <h4 class="font-serif font-bold text-navy-900 text-xs">Revenue & Survey Settlement</h4>
+                            <p class="text-[11px] text-gray-600 mt-0.5">Specialized in land records, mutation, title audit & survey disputes.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="practice-areas" class="py-16 bg-slateBg border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-gold-600 font-semibold text-xs uppercase tracking-widest block mb-1">Key Legal Expertise</span>
+                <h2 class="text-3xl font-serif font-bold text-navy-900 mb-2">Practice Areas & Specialization</h2>
+                <div class="w-16 h-1 bg-gold-500 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Practice 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-navy-900 text-gold-400 rounded-lg flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-house-chimney-crack"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-navy-900 mb-2">Civil & Property Litigation</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Land title disputes, partition suits, eviction, boundary conflicts, property injunctions, legal notice drafting, and title verification.
+                        </p>
+                    </div>
+                    <a href="#appointment" class="text-xs font-semibold text-navy-900 hover:text-gold-600 flex items-center gap-1 pt-4 mt-2 border-t border-gray-100">
+                        <span>Consult Property Case</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Practice 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-navy-900 text-gold-400 rounded-lg flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-landmark"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-navy-900 mb-2">Survey Settlement & Revenue Courts</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Expert advocacy in land record corrections, survey settlement disputes, mutation appeals, CNT/Khasmahal land legalities, and Revenue Board matters.
+                        </p>
+                    </div>
+                    <a href="#appointment" class="text-xs font-semibold text-navy-900 hover:text-gold-600 flex items-center gap-1 pt-4 mt-2 border-t border-gray-100">
+                        <span>Consult Revenue Matter</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Practice 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-navy-900 text-gold-400 rounded-lg flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-building-flag"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-navy-900 mb-2">RRDA, RMC & Electricity Board</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Building sanction disputes, municipal notices under Ranchi Municipal Corporation (RMC), RRDA layout approvals, and legal defense for Jharkhand Vidyut Nigam (JBVNL).
+                        </p>
+                    </div>
+                    <a href="#appointment" class="text-xs font-semibold text-navy-900 hover:text-gold-600 flex items-center gap-1 pt-4 mt-2 border-t border-gray-100">
+                        <span>Consult Municipal / Electricity Law</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Practice 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-navy-900 text-gold-400 rounded-lg flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-navy-900 mb-2">Criminal Defense & Bail</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Trial defense, anticipatory & regular bail applications, FIR quashing, revision petitions, and appeal representations before District & Sessions Court and High Court.
+                        </p>
+                    </div>
+                    <a href="#appointment" class="text-xs font-semibold text-navy-900 hover:text-gold-600 flex items-center gap-1 pt-4 mt-2 border-t border-gray-100">
+                        <span>Consult Criminal Defense</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Practice 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-navy-900 text-gold-400 rounded-lg flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-users-between-lines"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-navy-900 mb-2">Matrimonial & Family Disputes</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Divorce proceedings, child custody, spousal maintenance (125 CrPC / 144 BNSS), domestic violence protection, and amicable family settlements.
+                        </p>
+                    </div>
+                    <a href="#appointment" class="text-xs font-semibold text-navy-900 hover:text-gold-600 flex items-center gap-1 pt-4 mt-2 border-t border-gray-100">
+                        <span>Consult Family Case</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Practice 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-navy-900 text-gold-400 rounded-lg flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <h3 class="text-lg font-serif font-bold text-navy-900 mb-2">Banking, SARFAESI & Recovery</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Over 10 years handling debt recovery, DRT litigation, SARFAESI notices, 138 NI Act (cheque bounce), and title investigation reports for 9+ banks.
+                        </p>
+                    </div>
+                    <a href="#appointment" class="text-xs font-semibold text-navy-900 hover:text-gold-600 flex items-center gap-1 pt-4 mt-2 border-t border-gray-100">
+                        <span>Consult Banking Law</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="panels" class="py-16 bg-navy-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-gold-400 font-semibold text-xs uppercase tracking-widest block mb-1">
+                    <i class="fa-solid fa-certificate text-gold-400 mr-1"></i> Institutional Panels (10+ Years Experience)
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white mb-2">Empaneled Standing Counsel for 9+ Institutions</h2>
+                <p class="text-gray-300 text-xs sm:text-sm max-w-2xl mx-auto font-light">
+                    Providing high-level legal vetting, title auditing, SARFAESI execution, and litigation counsel for public sector banks, state electricity boards, and regional development authorities.
+                </p>
+                <div class="w-16 h-1 bg-gold-500 mx-auto mt-3"></div>
+            </div>
+
+            <!-- Panel Logos Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                
+                <div class="bg-navy-800/80 border border-navy-700 hover:border-gold-500/50 p-4 rounded-xl flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-600/20 text-blue-400 flex items-center justify-center text-lg shrink-0">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-white text-xs">State Bank of India</h4>
+                        <span class="text-[10px] text-gold-400">SBI Panel (10+ Yrs)</span>
+                    </div>
+                </div>
+
+                <div class="bg-navy-800/80 border border-navy-700 hover:border-gold-500/50 p-4 rounded-xl flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-lg shrink-0">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-white text-xs">Bank of India</h4>
+                        <span class="text-[10px] text-gold-400">BOI Legal Counsel</span>
+                    </div>
+                </div>
+
+                <div class="bg-navy-800/80 border border-navy-700 hover:border-gold-500/50 p-4 rounded-xl flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg shrink-0">
+                        <i class="fa-solid fa-vault"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-white text-xs">UCO Bank</h4>
+                        <span class="text-[10px] text-gold-400">UCO Panel Advisor</span>
+                    </div>
+                </div>
+
+                <div class="bg-navy-800/80 border border-navy-700 hover:border-gold-500/50 p-4 rounded-xl flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center text-lg shrink-0">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-white text-xs">Union Bank of India</h4>
+                        <span class="text-[10px] text-gold-400">UBI Standing Counsel</span>
+                    </div>
+                </div>
+
+                <div class="bg-navy-800/80 border border-navy-700 hover:border-gold-500/50 p-4 rounded-xl flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg shrink-0">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-white text-xs">Bank of Maharashtra</h4>
+                        <span class="text-[10px] text-gold-400">MahaBank Panel</span>
+                    </div>
+                </div>
+
+                <div class="bg-navy-800/80 border border-navy-700 hover:border-gold-500/50 p-4 rounded-xl flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center text-lg shrink-0">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-white text-xs">Jharkhand Rajya Gramin Bank</h4>
+                        <span class="text-[10px] text-gold-400">JRGB Legal Panel</span>
+                    </div>
+                </div>
+
+                <div class="bg-navy-800/80 border border-navy-700 hover:border-gold-500/50 p-4 rounded-xl flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-amber-400/20 text-amber-300 flex items-center justify-center text-lg shrink-0">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-white text-xs">Jharkhand Vidyut Nigam</h4>
+                        <span class="text-[10px] text-gold-400">JBVNL Electricity Board</span>
+                    </div>
+                </div>
+
+                <div class="bg-navy-800/80 border border-gold-500/50 p-4 rounded-xl flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center text-lg shrink-0">
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-bold text-white text-xs">RRDA & RMC + 3 Banks</h4>
+                        <span class="text-[10px] text-gold-400">9+ Total Panels (Etc.)</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Contact Details -->
+                <div class="lg:col-span-5 space-y-5">
+                    <span class="text-gold-600 font-semibold text-xs uppercase tracking-widest block">Direct Communication</span>
+                    <h2 class="text-3xl font-serif font-bold text-navy-900 leading-tight">Schedule Your Consultation</h2>
+                    
+                    <div class="bg-amber-50 border-l-4 border-gold-500 p-4 rounded-r-lg text-xs text-amber-950 space-y-1">
+                        <div class="font-bold text-sm text-amber-900 flex items-center gap-1.5">
+                            <i class="fa-solid fa-clock text-gold-600"></i> Open Hours: 8:00 AM to 8:00 PM
+                        </div>
+                        <p class="text-gray-700">
+                            Available Monday through Saturday for direct phone calls, chamber appointments, and instant WhatsApp legal queries.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3 pt-1">
+                        <div class="flex items-center gap-3 p-3.5 bg-slateBg rounded-xl border border-gray-200">
+                            <div class="w-10 h-10 rounded-lg bg-navy-900 text-gold-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] text-gray-500 font-medium block">Phone / WhatsApp</span>
+                                <a href="tel:+919334165736" class="font-serif font-bold text-navy-900 text-base hover:text-gold-600 transition">
+                                    +91 93341 65736
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3.5 bg-slateBg rounded-xl border border-gray-200">
+                            <div class="w-10 h-10 rounded-lg bg-navy-900 text-gold-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="overflow-hidden">
+                                <span class="text-[10px] text-gray-500 font-medium block">Official Email</span>
+                                <a href="mailto:RanjayKumarSinha62524@gmail.com" class="font-semibold text-navy-900 text-xs sm:text-sm hover:text-gold-600 transition truncate block">
+                                    RanjayKumarSinha62524@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-2 pt-1">
+                            <a href="https://wa.me/919334165736?text=Hello%20Advocate%20Ranjay%20Kumar%20Sinha,%20I%20would%20like%20to%20schedule%20a%20legal%20consultation." target="_blank" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 px-3 rounded-lg text-center text-xs transition flex items-center justify-center gap-1.5 shadow">
+                                <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Now
+                            </a>
+                            <a href="tel:+919334165736" class="flex-1 bg-navy-900 hover:bg-navy-800 text-white font-semibold py-2.5 px-3 rounded-lg text-center text-xs transition flex items-center justify-center gap-1.5 shadow">
+                                <i class="fa-solid fa-phone text-gold-400"></i> Direct Call
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secure Form -->
+                <div class="lg:col-span-7 bg-slateBg border border-gray-200 rounded-2xl p-6 shadow-md">
+                    <h3 class="text-lg font-serif font-bold text-navy-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-gold-600"></i> Secure Consultation Request
+                    </h3>
+
+                    <form id="consultationForm" onsubmit="handleSecureFormSubmit(event)" class="space-y-3">
+                        
+                        <!-- Anti-Spam Honeypot Field -->
+                        <div class="hp-field">
+                            <input type="text" id="website_hp" name="website_hp" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-[11px] font-semibold text-navy-900 uppercase tracking-wider mb-1">Full Name *</label>
+                                <input type="text" id="clientName" maxlength="80" required placeholder="Enter full name" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold-500 outline-none text-xs bg-white">
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-semibold text-navy-900 uppercase tracking-wider mb-1">Phone Number *</label>
+                                <input type="tel" id="clientPhone" maxlength="15" required placeholder="+91 9876543210" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold-500 outline-none text-xs bg-white">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-[11px] font-semibold text-navy-900 uppercase tracking-wider mb-1">Legal Category *</label>
+                                <select id="legalCategory" required class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold-500 outline-none text-xs bg-white">
+                                    <option value="" disabled selected>Select Legal Area</option>
+                                    <option value="Civil & Property Litigation">Civil & Property Litigation</option>
+                                    <option value="Survey Settlement & Revenue Matter">Survey Settlement & Revenue Matter</option>
+                                    <option value="RRDA / RMC / Electricity Board">RRDA / RMC / Electricity Board Matter</option>
+                                    <option value="Criminal Defense & Bail">Criminal Defense & Bail</option>
+                                    <option value="Matrimonial & Family Dispute">Matrimonial & Family Dispute</option>
+                                    <option value="Banking & SARFAESI Recovery">Banking & SARFAESI Recovery</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-semibold text-navy-900 uppercase tracking-wider mb-1">Preferred Time Slot</label>
+                                <select id="preferredTime" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold-500 outline-none text-xs bg-white">
+                                    <option value="Morning (8 AM - 12 PM)">Morning (8:00 AM - 12:00 PM)</option>
+                                    <option value="Afternoon (12 PM - 4 PM)">Afternoon (12:00 PM - 4:00 PM)</option>
+                                    <option value="Evening (4 PM - 8 PM)">Evening (4:00 PM - 8:00 PM)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-[11px] font-semibold text-navy-900 uppercase tracking-wider mb-1">Case Brief *</label>
+                            <textarea id="caseDetails" rows="3" maxlength="1000" required placeholder="Briefly describe your case or inquiry..." class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold-500 outline-none text-xs bg-white"></textarea>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="w-full bg-navy-900 hover:bg-navy-800 text-gold-400 font-bold py-3 px-5 rounded-lg shadow transition flex items-center justify-center gap-2 text-xs">
+                            <i class="fa-solid fa-paper-plane text-xs text-gold-500"></i>
+                            <span class="lang-en">Submit Consultation Request</span>
+                            <span class="lang-hi hidden">अनुरोध भेजें</span>
+                        </button>
+                    </form>
+
+                    <!-- Alert Box -->
+                    <div id="formSuccessAlert" class="hidden mt-4 p-4 bg-emerald-50 border border-emerald-300 text-emerald-900 rounded-lg text-xs">
+                        <div class="flex items-center gap-2 font-bold mb-1 text-sm">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                            <span>Request Sanitized & Prepared!</span>
+                        </div>
+                        <p class="text-[11px] text-emerald-800 mb-2">Click below to dispatch directly via WhatsApp or Email:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <a id="whatsappSendLink" href="#" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded text-xs font-bold flex items-center gap-1">
+                                <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+                            </a>
+                            <a id="emailSendLink" href="#" class="bg-navy-900 hover:bg-navy-800 text-white px-3 py-1.5 rounded text-xs font-bold flex items-center gap-1">
+                                <i class="fa-solid fa-envelope"></i> Send via Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="office" class="py-16 bg-slateBg border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-gold-600 font-semibold text-xs uppercase tracking-widest block mb-1">Chamber Address</span>
+                <h2 class="text-3xl font-serif font-bold text-navy-900 mb-2">Visit Office Chamber</h2>
+                <div class="w-16 h-1 bg-gold-500 mx-auto"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+                
+                <!-- Address Box -->
+                <div class="lg:col-span-5 bg-navy-900 text-white rounded-2xl p-6 shadow-xl flex flex-col justify-between border-t-4 border-gold-500">
+                    <div>
+                        <div class="text-gold-400 font-serif font-semibold mb-3 text-base flex items-center gap-2">
+                            <i class="fa-solid fa-building-user"></i> Chamber Location
+                        </div>
+                        
+                        <h3 class="text-xl font-serif font-bold mb-4">Advocate Ranjay Kumar Sinha</h3>
+                        
+                        <div class="space-y-3.5 text-xs text-gray-300">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-gold-500 mt-1 text-base shrink-0"></i>
+                                <div>
+                                    <strong class="text-white block mb-0.5">Full Office Address:</strong>
+                                    108 Krishna Tower, Near Holy Child Public School,<br>
+                                    Itki Road, Hehal, Ranchi, Jharkhand - 834005
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-phone text-gold-500 mt-1 text-base shrink-0"></i>
+                                <div>
+                                    <strong class="text-white block mb-0.5">Phone / Mobile:</strong>
+                                    <a href="tel:+919334165736" class="hover:text-gold-400 font-mono text-sm">+91 93341 65736</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-envelope text-gold-500 mt-1 text-base shrink-0"></i>
+                                <div>
+                                    <strong class="text-white block mb-0.5">Email Address:</strong>
+                                    <a href="mailto:RanjayKumarSinha62524@gmail.com" class="hover:text-gold-400 break-all">RanjayKumarSinha62524@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-clock text-gold-500 mt-1 text-base shrink-0"></i>
+                                <div>
+                                    <strong class="text-white block mb-0.5">Consultation Timings:</strong>
+                                    Monday - Saturday: <strong>8:00 AM to 8:00 PM</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-5 mt-5 border-t border-navy-800">
+                        <a href="https://maps.google.com/?q=108+Krishna+Tower+Hehal+Itki+Road+Ranchi+Jharkhand" target="_blank" class="w-full bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold py-2.5 rounded-lg text-center text-xs transition flex items-center justify-center gap-1.5 shadow">
+                            <i class="fa-solid fa-diamond-turn-right"></i> Open Directions in Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="lg:col-span-7 bg-white p-2 rounded-2xl shadow-md border border-gray-200 min-h-[320px]">
+                    <div class="w-full h-full rounded-xl overflow-hidden min-h-[320px]">
+                        <iframe 
+                            title="Chamber Map Location" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; min-height: 340px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.6455193910817!2d85.2818!3d23.3644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e13589b27a37%3A0x6b6375f3a093ed7b!2sItki%20Rd%2C%20Hehal%2C%20Ranchi%2C%20Jharkhand%20834005!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy-950 text-gray-400 text-xs border-t border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 border-b border-navy-800">
+            <div class="bg-navy-900/60 p-4 rounded-xl border border-navy-800 text-[11px] leading-relaxed text-gray-400">
+                <span class="font-bold text-gold-400 uppercase tracking-wider block mb-1">
+                    <i class="fa-solid fa-gavel mr-1"></i> Statutory Bar Council Disclaimer:
+                </span>
+                <p>
+                    As per the rules of the Bar Council of India, advocates are not permitted to solicit work or advertise. By accessing this website, the user acknowledges that they are seeking legal information regarding Advocate Ranjay Kumar Sinha voluntarily. Content here is purely for informational purposes and does not constitute formal legal advice.
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+                <div>
+                    <span class="font-serif font-bold text-sm text-white block">Advocate Ranjay Kumar Sinha</span>
+                    <span class="text-[11px] text-gold-400 block">35+ Yrs Practice • High Court, Revenue & Banking Counsel</span>
+                </div>
+
+                <div class="text-center text-[11px] text-gray-400">
+                    <p>108 Krishna Tower, Near Holy Child Public School, Itki Road, Hehal, Ranchi</p>
+                    <p class="mt-0.5">Phone: +91 93341 65736 | Hours: 8:00 AM - 8:00 PM</p>
+                </div>
+
+                <div class="text-right text-[11px] text-gray-400">
+                    <p>&copy; <span id="currentYear"></span> Adv. Ranjay Kumar Sinha. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-0 left-0 right-0 bg-navy-950 border-t border-gold-500/30 py-2 px-4 z-40 lg:hidden shadow-2xl">
+        <div class="grid grid-cols-3 gap-2 text-center text-xs">
+            <a href="tel:+919334165736" class="bg-navy-800 text-white py-2 rounded-lg font-medium flex items-center justify-center gap-1 border border-navy-700">
+                <i class="fa-solid fa-phone text-gold-400"></i> Call
+            </a>
+            <a href="https://wa.me/919334165736" target="_blank" class="bg-emerald-600 text-white py-2 rounded-lg font-medium flex items-center justify-center gap-1">
+                <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+            </a>
+            <a href="#appointment" class="bg-gold-500 text-navy-950 py-2 rounded-lg font-bold flex items-center justify-center gap-1">
+                <i class="fa-regular fa-calendar-check"></i> Consult
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Set dynamic year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Photo Upload Preview Logic
+        function previewUploadedPhoto(event) {
+            const file = event.target.files[0];
+            if (file) {
+                // Check max size (5MB)
+                if (file.size > 5 * 1024 * 1024) {
+                    alert('Please select an image smaller than 5MB.');
+                    return;
+                }
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('advocatePhoto').src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Mobile drawer menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('menuIcon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+
+        // Bilingual Toggle (English / Hindi)
+        let isHindi = false;
+        function toggleLanguage() {
+            isHindi = !isHindi;
+            
+            const enElements = document.querySelectorAll('.lang-en');
+            const hiElements = document.querySelectorAll('.lang-hi');
+
+            if (isHindi) {
+                enElements.forEach(el => el.classList.add('hidden'));
+                hiElements.forEach(el => el.classList.remove('hidden'));
+                document.getElementById('langBtnText').textContent = 'English';
+                document.getElementById('langMobileText').textContent = 'EN';
+            } else {
+                hiElements.forEach(el => el.classList.add('hidden'));
+                enElements.forEach(el => el.classList.remove('hidden'));
+                document.getElementById('langBtnText').textContent = 'हिंदी में देखें';
+                document.getElementById('langMobileText').textContent = 'HI';
+            }
+        }
+
+        // Cyber Security: Anti-XSS Sanitizer
+        function sanitizeInput(str) {
+            if (!str) return '';
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#x27;');
+        }
+
+        // Client-side rate limiter timestamp
+        let lastSubmissionTime = 0;
+
+        // Secure Form Submission Handler
+        function handleSecureFormSubmit(event) {
+            event.preventDefault();
+
+            // 1. Anti-Spam Honeypot Check
+            const hpValue = document.getElementById('website_hp').value;
+            if (hpValue && hpValue.trim() !== '') {
+                console.warn('Bot blocked.');
+                return false;
+            }
+
+            // 2. Rate Limiting Check (10 sec cooldown)
+            const now = Date.now();
+            if (now - lastSubmissionTime < 10000) {
+                alert('Please wait a few seconds before submitting again.');
+                return false;
+            }
+
+            // 3. Extract & Sanitize
+            const rawName = document.getElementById('clientName').value.trim();
+            const rawPhone = document.getElementById('clientPhone').value.trim();
+            const rawCategory = document.getElementById('legalCategory').value;
+            const rawTime = document.getElementById('preferredTime').value;
+            const rawDetails = document.getElementById('caseDetails').value.trim();
+
+            if (!rawName || !rawPhone || !rawCategory || !rawDetails) {
+                alert('Please fill out all required fields.');
+                return false;
+            }
+
+            const cleanName = sanitizeInput(rawName);
+            const cleanPhone = sanitizeInput(rawPhone);
+            const cleanCategory = sanitizeInput(rawCategory);
+            const cleanTime = sanitizeInput(rawTime);
+            const cleanDetails = sanitizeInput(rawDetails);
+
+            lastSubmissionTime = now;
+
+            // 4. Build WhatsApp URL
+            const waText = `*Legal Consultation Request*%0A%0A` +
+                           `*Client Name:* ${encodeURIComponent(cleanName)}%0A` +
+                           `*Phone:* ${encodeURIComponent(cleanPhone)}%0A` +
+                           `*Category:* ${encodeURIComponent(cleanCategory)}%0A` +
+                           `*Preferred Time:* ${encodeURIComponent(cleanTime)}%0A` +
+                           `*Case Details:* ${encodeURIComponent(cleanDetails)}`;
+
+            const waUrl = `https://wa.me/919334165736?text=${waText}`;
+
+            // 5. Build Mailto URL
+            const emailSubject = encodeURIComponent(`Consultation Request: ${cleanCategory} - ${cleanName}`);
+            const emailBody = encodeURIComponent(`Name: ${cleanName}\nPhone: ${cleanPhone}\nCategory: ${cleanCategory}\nPreferred Timing: ${cleanTime}\n\nCase Details:\n${cleanDetails}`);
+            const mailtoUrl = `mailto:RanjayKumarSinha62524@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+
+            // 6. Safely reveal response links
+            const alertBox = document.getElementById('formSuccessAlert');
+            document.getElementById('whatsappSendLink').href = waUrl;
+            document.getElementById('emailSendLink').href = mailtoUrl;
+            alertBox.classList.remove('hidden');
+
+            alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+</body>
+</html>
